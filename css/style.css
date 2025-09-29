@@ -101,21 +101,35 @@ header {
 
 /*======================================================
  CONFIGURANDO A AREA DO BANNER
-====================================================== */
-
-.galeria {
+ .galeria {
     margin: 0px auto;
     width: 1090px;
     height: 500px;
     position: relative;
     overflow: hidden;
 }
+====================================================== */
+
+.galeria {
+    width: 100%;
+    height: 90vh;
+}
+
+.slider {
+    margin: 0px auto;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
 
 .fotos {
     position: absolute;
+    width: 100%;
+    object-fit: contain;
     opacity: 0;
     animation-name: animacao;
-    animation-duration: 20s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
 }
 
