@@ -1,142 +1,204 @@
-*{
-	padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-	background-color:rgba(2,2,2,0.2);
+
+body {
+    background-color: rgba(2, 2, 2, 0.2);
 }
+
+
 /*======================================================
- inicio logo*/
+ CONFIGURANDO A AREA DO HEADER COM A LOGO E O MENU
+====================================================== */
+
+header {
+    height: 120px;
+    background-color: #000;
+}
+
+.header {
+    max-width: 1140px;
+    height: 116px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/*ARE DA LOGO*/
 
 .logo {
-	margin: 20px ;
-	width: 400px;
-	height: 100px;
-	font-family: Sans-serif;
-}
-/*======================================================
- inicio slide*/
-.galeria{
-	margin: 0px auto;
-	width: 1090px;
-	height: 500px;
-	position: relative;
-	overflow: hidden;
+    width: 135px;
+    display: flex;
+    flex-direction: column;
 }
 
-.fotos{
-	position: absolute;
-	opacity: 0;
-	animation-name: animacao;
-	animation-duration: 20s;
-	animation-iteration-count: infinite;
+
+/*ESTILIZANDO  TAMANHO E COR DA LOGO*/
+
+.logo img {
+    width: 130px;
+    height: 80px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-@keyframes animacao{
-	25%{
-		opacity: 1;
-		transform:scale(1.1,1.1);
-	}
-	50%{
-		opacity:0;
-	}
+.logo p {
+    font-weight: bold;
+    font-family: Sans-serif;
+    color: #FFFF;
+    display: flex;
+    font-size: 14px;
 }
 
-.fotos:nth-child(1){
+.logo a {
+    text-decoration: none;
+}
 
-}
-.fotos:nth-child(2){
-	animation-delay: 5s;
-}
-.fotos:nth-child(3){
-	animation-delay: 10s;
-}
-.fotos:nth-child(4){
-	animation-delay: 15s;
-}
-.fotos:nth-child(5){
-	animation-delay: 20s;
-}
 
 /*======================================================
  inicio menu*/
-.nav .menu{
-	width: 100%;
-	text-align: center;
-	box-shadow: 1px 2px 4px grey;
-	background: rgba(2,2,2,0.2);
-	position: absolute;
-	z-index: 5;
 
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.menu li{
-	list-style-type: none;
-	display: inline-block;
-	padding: 30px;
-	margin: 0px 20px;
-	font-size: 25px;
-	font-family: sans-serif;
-	cursor: pointer;
-	font-weight: bold;
-	color:white;
+
+/*ESTILIZANDO OS ITNES DO MENU*/
+
+.menu ul,
+.menu li {
+    list-style: none;
 }
 
-.menu li:hover{
-	background: #007bff;
-	color: white;
+.menu ul {
+    display: flex;
 }
+
+.menu li a {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #000;
+}
+
+.menu li a:hover,
+.menu .active a {
+    border-bottom: 5px solid #B28756;
+    color: #FFF;
+}
+
+
+/*======================================================
+ CONFIGURANDO A AREA DO BANNER
+====================================================== */
+
+.galeria {
+    margin: 0px auto;
+    width: 1090px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fotos {
+    position: absolute;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacao {
+    25% {
+        opacity: 1;
+        transform: scale(1.1, 1.1);
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.fotos:nth-child(1) {}
+
+.fotos:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.fotos:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.fotos:nth-child(4) {
+    animation-delay: 15s;
+}
+
+.fotos:nth-child(5) {
+    animation-delay: 20s;
+}
+
 
 /*======================================================
  inicio head*/
- .head{
- 	margin-top: 30px;
- 	position: absolute;
- 	text-align: center;
- 	width: 100%;
- 	box-shadow: 1px 2px 4px grey;
-	background: rgba(2,2,2,0.2);
-	position: absolute;
- }
 
- /*======================================================
+.head {
+    margin-top: 30px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    box-shadow: 1px 2px 4px grey;
+    background: rgba(2, 2, 2, 0.2);
+    position: absolute;
+}
+
+
+/*======================================================
  inicio imagens */
 
- .imagens{
- 	margin-top: 30%;
- 	margin-left: 10px;
- 	font-family: Sans-serif;
- 	width: 100%;
- 	display: inline-block;
- }
+.imagens {
+    margin-top: 30%;
+    margin-left: 10px;
+    font-family: Sans-serif;
+    width: 100%;
+    display: inline-block;
+}
 
- .Eventos{
- 	margin-top: 10%;
- 	margin-left: 10px;
- 	font-family: Sans-serif;
- 	width: 100%;
- 	display: inline-block;
- }
+.Eventos {
+    margin-top: 10%;
+    margin-left: 10px;
+    font-family: Sans-serif;
+    width: 100%;
+    display: inline-block;
+}
 
- .sobre{
- 	margin-top: 30px;
- 	width: 100%;
- 	position: absolute;
- 	text-align: center;
- 	box-shadow: 1px 2px 4px grey;
-	background: rgba(2,2,2,0.2);
-	position: absolute;
- }
- 
- footer{
- 	margin-top:25% ;
-	height: 80px;
-	font-family: Sans-serif;
- 	width: 100%;
- 	color: red;
- 	text-align: center;
- 	box-shadow: 1px 2px 4px grey;
-	background: rgba(2,2,2,0.2);
-	position: absolute;
- }
+.sobre {
+    margin-top: 30px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    box-shadow: 1px 2px 4px grey;
+    background: rgba(2, 2, 2, 0.2);
+    position: absolute;
+}
+
+footer {
+    margin-top: 25%;
+    height: 80px;
+    font-family: Sans-serif;
+    width: 100%;
+    color: red;
+    text-align: center;
+    box-shadow: 1px 2px 4px grey;
+    background: rgba(2, 2, 2, 0.2);
+    position: absolute;
+}
