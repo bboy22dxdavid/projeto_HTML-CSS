@@ -12,5 +12,3 @@ primeira aplicação em html/css
 * uma galeria organizada 
 * area de contato 
 * footer
-* Será criado a responsividade
->>>>>>> f8bb4ba (Será recriada toda a landing-page)
