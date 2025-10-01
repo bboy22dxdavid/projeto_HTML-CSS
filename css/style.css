@@ -158,7 +158,7 @@ header {
 
 .produtos {
     width: 100%;
-    height: 180px;
+    height: 200px;
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -192,7 +192,7 @@ header {
     height: 50px;
     position: absolute;
     /*colocando os item com posicao absoluta*/
-    left: 98%;
+    right: 100%;
     /*alinhando na lateral esquerda*/
     animation: autoRun 10s linear infinite;
     animation-delay: var(--delay);
@@ -202,6 +202,7 @@ header {
 .item img {
     width: 100%;
     border-radius: 10px;
+    object-fit: contain;
 }
 
 
@@ -210,18 +211,94 @@ header {
 @keyframes autoRun {
     /*vem do 100% da esquerda*/
     from {
-        left: 100%;
+        right: 100%;
     }
     /*passa para -50px da esquerda da tela*/
     to {
-        left: -50px;
+        right: -50px;
     }
 }
 
 
 /*======================================================
-			AREA DE NOSSOS PRODUTOS
+			AREA DE NOSSOS SOBRE NOS
  ======================================================*/
+
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #bbb9b9;
+}
+
+.default .section-tile,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-tile {
+    font-size: 20px;
+}
+
+.default .section-desc {
+    font-size: 12px;
+    color: #5e5555;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.default .section-body {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.section-aboutus {
+    display: flex;
+    gap: 30px;
+}
+
+.section-abautus-left {
+    flex: 1;
+    margin-top: 50px;
+}
+
+.section-abautus-left h1 {
+    font-weight: bold;
+}
+
+.section-abautus-left p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #B28756;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.section-abautus-right {
+    width: 520px;
+    text-align: center;
+}
+
+.section-abautus-right img {
+    border-radius: 10px;
+    width: 700px;
+    box-shadow: 0px 5px 10px #333;
+}
+
+.section-abautus-right p {
+    margin-top: 10px;
+}
 
 
 /*======================================================
