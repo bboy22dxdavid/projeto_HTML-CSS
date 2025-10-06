@@ -1,14 +1,19 @@
-<<<<<<< HEAD
-# projeto_HTML-CSS
-primeira aplicação em html/css
-=======
-# Projeto dinastis-longBar
+# FOI CRIADO UM MODELO DE LANDING-PAGE 
 
-* Será recriado a landing-page para com um novo layout
-* com menu mais intuitivo
-* banner inicial
-* area sobre nos
-* nossos produtos
-* uma galeria organizada 
-* area de contato 
-* footer
+projetos de landing-page, um hookar. 
+
+![dinastia-novo](https://github.com/user-attachments/assets/2d0b6e34-de0e-4fcb-8aa1-8eb052ab7b61)
+
+> Foi refeito uma landing page, com um desing moderno, ituitivo, mais armonico e totalmente reponsivel. utilizando tecnicas baseado no curso da B7 Web.
+
+
+
+## 🛠 Tecnologias
+
+- HTML
+- CSS
+- Github
+
+## 💛 Contato
+
+bboy22dx@gmail.com
