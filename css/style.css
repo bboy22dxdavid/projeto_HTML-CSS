@@ -57,6 +57,14 @@ header {
 /*======================================================
  inicio menu*/
 
+
+/*ESTILIZANDO O MENU*/
+
+.menu-opener {
+    display: none;
+    /* OCULTANDO O MENU*/
+}
+
 .menu {
     flex: 1;
     display: flex;
@@ -500,4 +508,73 @@ footer p {
     color: #757474;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+
+/*==============================
+        CRIANDO RESPONSIVIDADE
+   ==============================*/
+
+@media (min-width:400px) {
+    .logo {
+        margin-left: 50px;
+    }
+    /*AREA DA MENU DRAWER*/
+    .menu-opener {
+        display: block;
+        width: 45px;
+        margin-right: 50px;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a {
+        font-weight: bold;
+        height: 80px;
+        font-size: 27px;
+        margin-left: 50px;
+        border: 0;
+    }
+    .menu li.active a {
+        border: 0;
+        color: #B28756;
+    }
+    .galeria {
+        height: 35vh;
+        margin-bottom: 10px;
+    }
+    .section-abautus-right img {
+        width: 400px;
+    }
+    .section-abautus-right p {
+        margin-top: 10px;
+        margin-left: 5%;
+    }
+    .section-abautus-left h1 {
+        margin-left: 40px;
+    }
+    .section-abautus-left p {
+        margin-left: 40px;
+    }
+    .button {
+        margin-left: 40px;
+    }
+    .produtos {
+        width: 95%;
+    }
+    .item img {
+        width: 90%;
+        border-radius: 10px;
+        object-fit: contain;
+    }
 }
