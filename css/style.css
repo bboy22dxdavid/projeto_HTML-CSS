@@ -515,7 +515,7 @@ footer p {
         CRIANDO RESPONSIVIDADE
    ==============================*/
 
-@media (min-width:400px) {
+@media (min-width:400px) and (max-width:800px) {
     .logo {
         margin-left: 50px;
     }
